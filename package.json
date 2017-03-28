@@ -1,0 +1,25 @@
+{
+  "name": "liri-node-app",
+  "version": "1.0.0",
+  "description": "a simple app to retrieve data using specific inputs",
+  "main": "liri.js",
+  "dependencies": {
+    "omdb": "^0.7.0",
+    "spotify": "^0.3.0",
+    "twitter": "^1.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nova1023/liri-node-app.git"
+  },
+  "author": "Tom Yu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nova1023/liri-node-app/issues"
+  },
+  "homepage": "https://github.com/nova1023/liri-node-app#readme"
+}
