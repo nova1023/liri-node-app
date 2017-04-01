@@ -61,6 +61,25 @@ function myTweets() {
 			console.log("===============================================================");
   		}
 
+		var commandLog = "node liri.js " + command + " " + "\n";
+		fs.appendFile("./log.txt", commandLog +
+			"\tUsername: " + name + "\n"
+			,function(error)
+			{
+				if (error)
+					throw error;
+			});
+
+  		for (var i = 0; i < 20; i++) {
+  			text = tweets[i].text;
+			fs.appendFile("./log.txt",
+			"\tTweets: " + text + "\n"
+			,function(error)
+			{
+				if(error)
+					throw error;
+			});
+		}
 	});
 };
 
